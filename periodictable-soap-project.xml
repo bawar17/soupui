@@ -361,61 +361,61 @@
       <http:address location="http://www.webservicex.net/periodictable.asmx"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://www.webservicex.net/periodictable.asmx</con:endpoint></con:endpoints><con:operation id="84a70276-ec02-4f11-8521-f760d8f22d54" isOneWay="false" action="http://www.webserviceX.NET/GetAtomicNumber" name="GetAtomicNumber" bindingOperationName="GetAtomicNumber" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9c0effd6-b93a-4540-8508-fc06d7567307" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/periodictable.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <web:GetAtomicNumber>\r
-         <!--Optional:-->\r
-         <web:ElementName>?</web:ElementName>\r
-      </web:GetAtomicNumber>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetAtomicNumber"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="b31b99b7-0f9f-4046-a29d-e7c4b70be46b" isOneWay="false" action="http://www.webserviceX.NET/GetAtomicWeight" name="GetAtomicWeight" bindingOperationName="GetAtomicWeight" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fd3de2bc-64a0-4099-8a3d-87cb0a0bd0a7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/periodictable.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <web:GetAtomicWeight>\r
-         <!--Optional:-->\r
-         <web:ElementName>?</web:ElementName>\r
-      </web:GetAtomicWeight>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetAtomicWeight"/></con:call></con:operation><con:operation id="46f9696a-158c-446e-9cdc-251d5611f2f4" isOneWay="false" action="http://www.webserviceX.NET/GetAtoms" name="GetAtoms" bindingOperationName="GetAtoms" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="371edb83-a19d-47e9-83bc-7a43316ee0ba" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/periodictable.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <web:GetAtoms/>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetAtoms"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="d259d7de-5642-4e48-a6f4-209bfd22ea46" isOneWay="false" action="http://www.webserviceX.NET/GetElementSymbol" name="GetElementSymbol" bindingOperationName="GetElementSymbol" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0f23b46a-fffa-423f-b537-fe582226d002" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/periodictable.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <web:GetElementSymbol>\r
-         <!--Optional:-->\r
-         <web:ElementName>?</web:ElementName>\r
-      </web:GetElementSymbol>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetElementSymbol"/></con:call></con:operation></con:interface><con:testSuite id="80bbc06c-e175-48fb-b27e-bf562c8b936f" name="PeriodicTable_TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="fe67070b-b97f-4a71-9c48-c620eb847ef0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="PeriodicTable_TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetAtoms" id="312554f0-9c79-4adb-b8f3-cfe36dfa107b"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>periodictableSoap</con:interface><con:operation>GetAtoms</con:operation><con:request name="GetAtoms" id="55fcf553-9c13-44c6-a38d-31f0403ec25d"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/periodictable.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <web:GetAtoms/>\r
-   </soapenv:Body>\r
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://www.webservicex.net/periodictable.asmx</con:endpoint></con:endpoints><con:operation id="84a70276-ec02-4f11-8521-f760d8f22d54" isOneWay="false" action="http://www.webserviceX.NET/GetAtomicNumber" name="GetAtomicNumber" bindingOperationName="GetAtomicNumber" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9c0effd6-b93a-4540-8508-fc06d7567307" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/periodictable.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetAtomicNumber>
+         <!--Optional:-->
+         <web:ElementName>?</web:ElementName>
+      </web:GetAtomicNumber>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetAtomicNumber"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="b31b99b7-0f9f-4046-a29d-e7c4b70be46b" isOneWay="false" action="http://www.webserviceX.NET/GetAtomicWeight" name="GetAtomicWeight" bindingOperationName="GetAtomicWeight" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fd3de2bc-64a0-4099-8a3d-87cb0a0bd0a7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/periodictable.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetAtomicWeight>
+         <!--Optional:-->
+         <web:ElementName>?</web:ElementName>
+      </web:GetAtomicWeight>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetAtomicWeight"/></con:call></con:operation><con:operation id="46f9696a-158c-446e-9cdc-251d5611f2f4" isOneWay="false" action="http://www.webserviceX.NET/GetAtoms" name="GetAtoms" bindingOperationName="GetAtoms" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="371edb83-a19d-47e9-83bc-7a43316ee0ba" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/periodictable.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetAtoms/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetAtoms"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="d259d7de-5642-4e48-a6f4-209bfd22ea46" isOneWay="false" action="http://www.webserviceX.NET/GetElementSymbol" name="GetElementSymbol" bindingOperationName="GetElementSymbol" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0f23b46a-fffa-423f-b537-fe582226d002" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/periodictable.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetElementSymbol>
+         <!--Optional:-->
+         <web:ElementName>?</web:ElementName>
+      </web:GetElementSymbol>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetElementSymbol"/></con:call></con:operation></con:interface><con:testSuite id="80bbc06c-e175-48fb-b27e-bf562c8b936f" name="PeriodicTable_TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="fe67070b-b97f-4a71-9c48-c620eb847ef0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="PeriodicTable_TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetAtoms" id="312554f0-9c79-4adb-b8f3-cfe36dfa107b"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>periodictableSoap</con:interface><con:operation>GetAtoms</con:operation><con:request name="GetAtoms" id="55fcf553-9c13-44c6-a38d-31f0403ec25d"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/periodictable.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetAtoms/>
+   </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="815d288e-e8bc-4b09-88dc-1aae65dab8c4"/><con:assertion type="Valid HTTP Status Codes" id="43a92962-1f79-404a-a6e4-75c64718849b" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="3a8767bc-ea16-4ce2-b122-0258af197405" name="Contains&quot;Actinium&quot;"><con:configuration><token>Actinium</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple NotContains" id="f4c29b35-1992-4098-948e-06f6954fecdd" name="Not Contains&quot;Sweden&quot;"><con:configuration><token>Sweden</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="XPath Match" id="17b97d31-dd21-417c-978f-e16edaa350eb" name="XPath Match"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
 declare namespace ns1='http://www.webserviceX.NET';
-matches(//ns1:GetAtomsResponse[1]/ns1:GetAtomsResult[1]/text(),'Actinium')</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="GetAtomicNumber" id="ff7d817e-ec32-4140-b699-74d1ed531158"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>periodictableSoap</con:interface><con:operation>GetAtomicNumber</con:operation><con:request name="GetAtomicNumber" id="1b01ff67-3482-4e3b-bd0f-5826f2d1f40c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/periodictable.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <web:GetAtomicNumber>\r
-         <!--Optional:-->\r
-         <web:ElementName>${ElementName#elementname}</web:ElementName>\r
-      </web:GetAtomicNumber>\r
-   </soapenv:Body>\r
+matches(//ns1:GetAtomsResponse[1]/ns1:GetAtomsResult[1]/text(),'Actinium')</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="GetAtomicNumber" id="ff7d817e-ec32-4140-b699-74d1ed531158"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>periodictableSoap</con:interface><con:operation>GetAtomicNumber</con:operation><con:request name="GetAtomicNumber" id="1b01ff67-3482-4e3b-bd0f-5826f2d1f40c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/periodictable.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetAtomicNumber>
+         <!--Optional:-->
+         <web:ElementName>${ElementName#elementname}</web:ElementName>
+      </web:GetAtomicNumber>
+   </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="f32eb623-3a1d-4258-b4fd-56ce46c17493"/><con:assertion type="Valid HTTP Status Codes" id="1a2413c2-8ef8-4892-9776-a87a8e95431b" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="0f6c175e-a543-42a5-940d-ba298064a7f2" name="Contains&quot;Ac&quot;"><con:configuration><token>Ac</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple NotContains" id="02701fc6-1d20-408b-9c3f-cf621a7a83ae" name="Not Contains&quot;AF&quot;"><con:configuration><token>AF</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="properties" name="ElementName" id="cdfaa978-6716-4759-915e-a731fe9966d4"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>elementname</con:name><con:value>Actinium</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="Weight" id="0a2f1c4c-e71f-49c3-9105-70f984704bd4"><con:settings/><con:config><script>import groovy.xml.*
 def atomicweight = "Aluminium"
 log.info(atomicweight)
-com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "atomicweight", atomicweight)</script></con:config></con:testStep><con:testStep type="request" name="GetAtomicWeight" id="a8c0794a-0d0b-45ee-b72f-827f0b161ebf"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>periodictableSoap</con:interface><con:operation>GetAtomicWeight</con:operation><con:request name="GetAtomicWeight" id="c7cd63ec-8fb5-4a45-b4a1-e0eb584e12b7"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/periodictable.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <web:GetAtomicWeight>\r
-         <!--Optional:-->\r
-         <web:ElementName>${atomicweight}</web:ElementName>\r
-      </web:GetAtomicWeight>\r
-   </soapenv:Body>\r
+com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "atomicweight", atomicweight)</script></con:config></con:testStep><con:testStep type="request" name="GetAtomicWeight" id="a8c0794a-0d0b-45ee-b72f-827f0b161ebf"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>periodictableSoap</con:interface><con:operation>GetAtomicWeight</con:operation><con:request name="GetAtomicWeight" id="c7cd63ec-8fb5-4a45-b4a1-e0eb584e12b7"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/periodictable.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetAtomicWeight>
+         <!--Optional:-->
+         <web:ElementName>${atomicweight}</web:ElementName>
+      </web:GetAtomicWeight>
+   </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8a342299-3e9d-44b6-80c7-5a0ab0d131c3"/><con:assertion type="Valid HTTP Status Codes" id="c4b82da7-eb84-48cf-ac57-2b1649eabba5" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="d9722813-e9cb-4f0f-ae9c-fa68a8ad0d8b" name="Contains&quot;26.9815&quot;"><con:configuration><token>26.9815</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple NotContains" id="2f4f8a90-97ec-46fb-afb0-4141f7ce171a" name="Not Contains&quot;29.00&quot;"><con:configuration><token>29.00</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="FetchResponse_ Atoms" id="78fb95e6-3b9b-4b45-a1c8-6d6c81c5b978"><con:settings/><con:config><script>import groovy.xml.*
 import groovy.util.XmlParser
 import groovy.util.XmlSlurper
@@ -425,12 +425,12 @@ def responseContent = testRunner.testCase.getTestStepByName("GetAtoms").getPrope
 def response = new XmlSlurper().parseText(responseContent).Body.GetAtomsResponse.GetAtomsResult.text()
 def elename = new XmlSlurper().parseText(response).Table.ElementName[3]
 log.info(elename)
-com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "elename", elename.toString())</script></con:config></con:testStep><con:testStep type="request" name="GetElementSymbol" id="3b6df1bb-ad5d-48e5-a4aa-334c9cb47842"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>periodictableSoap</con:interface><con:operation>GetElementSymbol</con:operation><con:request name="GetElementSymbol" id="6c28f979-27ff-49a4-9c45-971b6403ea75"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/periodictable.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <web:GetElementSymbol>\r
-         <!--Optional:-->\r
-         <web:ElementName>${elename}</web:ElementName>\r
-      </web:GetElementSymbol>\r
-   </soapenv:Body>\r
+com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "elename", elename.toString())</script></con:config></con:testStep><con:testStep type="request" name="GetElementSymbol" id="3b6df1bb-ad5d-48e5-a4aa-334c9cb47842"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>periodictableSoap</con:interface><con:operation>GetElementSymbol</con:operation><con:request name="GetElementSymbol" id="6c28f979-27ff-49a4-9c45-971b6403ea75"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/periodictable.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetElementSymbol>
+         <!--Optional:-->
+         <web:ElementName>${elename}</web:ElementName>
+      </web:GetElementSymbol>
+   </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="5b084b29-e805-4527-9a88-4c19fab51415"/><con:assertion type="Valid HTTP Status Codes" id="77a5f87c-672f-4c79-92e7-e57d9f2dd677" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="a6826b11-ea99-41b1-bb29-a5ef9cf3f78c" name="Contains"><con:configuration><token>Sb</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple NotContains" id="b76a9936-f64f-4765-afc4-94d806625346" name="Not Contains"><con:configuration><token>AF</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
