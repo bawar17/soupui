@@ -1,0 +1,148 @@
+
+Skip to content
+titletitle
+
+Sök
+ 
+Jenkins
+soapUI3
+#10
+ Tillbaka till projektet
+ Status
+ Förändringar
+ Console Output
+ View as plain text
+ Redigera
+ Git Build Data
+ No Tags
+ Monitor Maven Process
+ Föregående bygge
+Progress:	
+
+In progressKonsollutskrift
+
+Started by user anonymous
+Building in workspace C:\Users\Bawar\.jenkins\workspace\soapUI3
+ > C:\Program Files\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/bawar17/soupui.git # timeout=10
+Fetching upstream changes from https://github.com/bawar17/soupui.git
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+using .gitcredentials to set credentials
+ > C:\Program Files\Git\bin\git.exe config --local credential.username bawar17@gmail.com # timeout=10
+ > C:\Program Files\Git\bin\git.exe config --local credential.helper store --file=\"C:\Users\Bawar\AppData\Local\Temp\git8944703641548360876.credentials\" # timeout=10
+ > C:\Program Files\Git\bin\git.exe -c core.askpass=true fetch --tags --progress https://github.com/bawar17/soupui.git +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files\Git\bin\git.exe config --local --remove-section credential # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision ff3365b2d9d5142ff094ba8af32929d9245f14ee (refs/remotes/origin/master)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f ff3365b2d9d5142ff094ba8af32929d9245f14ee
+ > C:\Program Files\Git\bin\git.exe rev-list a167d6d4fdaa0ab9ac071e3efef93ddb0fd0c433 # timeout=10
+Parsing POMs
+[soapUI3] $ "C:\Program Files\Java\jdk1.8.0_65/bin/java" -cp C:\Users\Bawar\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-agent-1.5.jar;C:\Users\Bawar\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven.v\boot\plexus-classworlds-2.5.2.jar;C:\Users\Bawar\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven.v/conf/logging jenkins.maven3.agent.Maven31Main C:\Users\Bawar\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven.v C:\Users\Bawar\.jenkins\war\WEB-INF\lib\remoting-2.57.jar C:\Users\Bawar\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-interceptor-1.5.jar C:\Users\Bawar\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.5.jar 54812
+<===[JENKINS REMOTING CAPACITY]===>channel started
+Executing Maven:  -B -f C:\Users\Bawar\.jenkins\workspace\soapUI3\pom.xml com.smartbear.soapui:soapui-maven-plugin:test -DprojectFile=CountryDetails-soapui-project.xml
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building soapUI project 0.0.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- soapui-maven-plugin:5.0.0:test (default-cli) @ soapui-project ---
+SoapUI 5.0.0 Maven2 TestCase Runner
+22:14:30,797 WARN  [SoapUI] Missing folder [C:\Users\Bawar\.jenkins\workspace\soapUI3\ext] for external libraries
+22:14:30,988 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\Bawar\soapui-settings.xml]
+22:14:34,048 INFO  [WsdlProject] Loaded project from [file:/C:/Users/Bawar/.jenkins/workspace/soapUI3/CountryDetails-soapui-project.xml]
+22:14:34,565 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [CountryDetails]
+22:14:34,565 INFO  [SoapUITestCaseRunner] Running Project [CountryDetails], runType = SEQUENTIAL
+22:14:34,577 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [CountryInfo]
+22:14:34,585 INFO  [SoapUITestCaseRunner] running step [GetCountries]
+22:14:35,066 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+22:14:35,066 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /country.asmx HTTP/1.1
+22:14:35,326 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+22:14:35,333 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+Progress: 1 - Caching Definition from url [http://www.webservicex.net/country.asmx?wsdl]
+22:14:35,689 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Bawar/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/xop.xsd with targetNamespace http://www.w3.org/2004/08/xop/include
+22:14:35,709 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Bawar/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/XMLSchema.xsd with targetNamespace http://www.w3.org/2001/XMLSchema
+22:14:35,709 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Bawar/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/xml.xsd with targetNamespace http://www.w3.org/XML/1998/namespace
+22:14:35,709 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Bawar/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/swaref.xsd with targetNamespace http://ws-i.org/profiles/basic/1.1/xsd
+22:14:35,713 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Bawar/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/xmime200505.xsd with targetNamespace http://www.w3.org/2005/05/xmlmime
+22:14:35,713 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Bawar/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/xmime200411.xsd with targetNamespace http://www.w3.org/2004/11/xmlmime
+22:14:35,718 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Bawar/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope.xsd with targetNamespace http://schemas.xmlsoap.org/soap/envelope/
+22:14:35,721 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Bawar/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd with targetNamespace http://schemas.xmlsoap.org/soap/encoding/
+22:14:35,723 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Bawar/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope12.xsd with targetNamespace http://www.w3.org/2003/05/soap-envelope
+22:14:35,726 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Bawar/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd with targetNamespace http://www.w3.org/2003/05/soap-encoding
+Progress: 2 - Loading [http://www.webservicex.net/country.asmx?wsdl]
+22:14:35,727 DEBUG [WsdlLoader] Getting wsdl component from [http://www.webservicex.net/country.asmx?wsdl]
+22:14:35,730 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
+22:14:35,734 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+22:14:35,734 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: GET /country.asmx?wsdl HTTP/1.1
+22:14:35,933 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+22:14:35,933 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+Progress: 1 - Loading Definition from cache
+22:14:36,630 DEBUG [AbstractDefinitionContext] Loading Definition...
+22:14:36,642 DEBUG [WsdlInterfaceDefinition] Loading WSDL: http://www.webservicex.net/country.asmx?wsdl
+22:14:36,642 DEBUG [AbstractWsdlDefinitionLoader] Returning baseInputSource [http://www.webservicex.net/country.asmx?wsdl]
+Retrieving document at 'http://www.webservicex.net/country.asmx?wsdl'.
+22:14:36,713 INFO  [SchemaUtils] Loading schema types from [http://www.webservicex.net/country.asmx?wsdl]
+22:14:36,713 INFO  [SchemaUtils] Getting schema http://www.webservicex.net/country.asmx?wsdl
+22:14:36,874 DEBUG [AbstractDefinitionContext] Loaded Definition: ok
+22:14:37,094 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+22:14:37,094 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+22:14:37,094 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+22:14:37,094 INFO  [SoapUITestCaseRunner] Assertion [Contains "Albania"] has status VALID
+22:14:37,094 INFO  [SoapUITestCaseRunner] Assertion [Not Contains"albanaana"] has status VALID
+22:14:37,094 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status VALID
+22:14:37,094 INFO  [SoapUITestCaseRunner] running step [GetCountryByCountryCode]
+22:14:37,098 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
+22:14:37,102 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+22:14:37,102 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /country.asmx HTTP/1.1
+22:14:37,370 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+22:14:37,371 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+22:14:37,376 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+22:14:37,377 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+22:14:37,377 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+22:14:37,377 INFO  [SoapUITestCaseRunner] Assertion [Contains "Sweden"] has status VALID
+22:14:37,377 INFO  [SoapUITestCaseRunner] Assertion [Not Contains "Norway"] has status VALID
+22:14:37,377 INFO  [SoapUITestCaseRunner] running step [Properties]
+22:14:37,379 INFO  [SoapUITestCaseRunner] running step [GetCurrencyByCountry]
+22:14:37,381 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
+22:14:37,382 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+22:14:37,382 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /country.asmx HTTP/1.1
+22:14:37,878 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+22:14:37,878 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+22:14:37,878 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+22:14:37,878 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+22:14:37,878 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+22:14:37,878 INFO  [SoapUITestCaseRunner] Assertion [Not Contains "NOKI"] has status VALID
+22:14:37,878 INFO  [SoapUITestCaseRunner] running step [FetchResponse_CountryName]
+22:14:38,314 INFO  [log] 
+22:14:38,325 INFO  [SoapUITestCaseRunner] running step [Global_Country]
+22:14:38,350 INFO  [log] sweden
+22:14:38,350 INFO  [SoapUITestCaseRunner] running step [GetGMTbyCountry]
+22:14:38,350 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
+22:14:38,354 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+22:14:38,354 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /country.asmx HTTP/1.1
+22:14:38,594 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+22:14:38,594 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+22:14:38,610 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+22:14:38,610 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+22:14:38,610 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+22:14:38,614 INFO  [SoapUITestCaseRunner] Assertion [Not Contains+2] has status VALID
+22:14:38,614 INFO  [SoapUITestCaseRunner] running step [Properties 1]
+22:14:38,614 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [CountryInfo], time taken: 4012ms, status: FINISHED
+22:14:38,614 INFO  [SoapUITestCaseRunner] Project [CountryDetails] finished with status [FINISHED] in 4045ms
+[JENKINS] Recording test results
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.972 s
+[INFO] Finished at: 2016-05-20T22:14:38+02:00
+[INFO] Final Memory: 30M/267M
+[INFO] ------------------------------------------------------------------------
+[JENKINS] Archiving C:\Users\Bawar\.jenkins\workspace\soapUI3\pom.xml to com.scania.cbm.test/soapui-project/0.0.1/soapui-project-0.0.1.pom
+channel stopped
+Finished: SUCCESS
+ Hjälp oss översätta denna sida
+Sidan skapades: 2016-maj-20 22:14:27 CESTREST APIJenkins ver. 2.3
